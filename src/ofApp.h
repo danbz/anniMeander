@@ -2,6 +2,17 @@
 
 #include "ofMain.h"
 
+/*
+ Project Title: anniMeander
+ Description: a quick investigation of red meander by anni albers https://www.wikiart.org/en/anni-albers colours taken from the textile woven version.
+ 
+ ©Daniel Buzzo 2019
+ dan@buzzo.com
+ http://buzzo.com
+ https://github.com/danbz
+ */
+
+
 class ofApp : public ofBaseApp{
 
 	public:
@@ -23,6 +34,8 @@ class ofApp : public ofBaseApp{
     
     void meander();
 		
-    int boxSize;
+    int boxSize, rows, columns;
     vector<ofColor> colorOrder;
+    ofColor redCol, yellowCol;
+    
 };
